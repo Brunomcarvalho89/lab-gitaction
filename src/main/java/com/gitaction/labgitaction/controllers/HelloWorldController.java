@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/hello-world")
 public class HelloWorldController {
 
+    public String teste;
+    
     @GetMapping
     public ResponseEntity hello() {
         return ResponseEntity.ok("Hello world!!!");
